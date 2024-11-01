@@ -1,6 +1,6 @@
 from dash import html, dcc
 import dash_bootstrap_components as dbc
-from components.fig_layout import my_figlayout  
+from components.fig_layout import blank_fig  
 from assets.color_palettes import ACTIVE_PALETTE  
 
 def create_plot_grid(sensor_info):
@@ -34,11 +34,11 @@ def create_plot_grid(sensor_info):
                     dcc.Loading(
                         dcc.Graph(
                             id=f'plot-{i}',
-                            figure={'data': [], 'layout': my_figlayout}
+                            figure=blank_fig()
                         ),
                         type="circle",
                         delay_show=500,
-                        delay_hide=2000,
+                        delay_hide=1200,
                         color=ACTIVE_PALETTE['primary']  # Spinner color
                     ),
                 ], className='plot-container'),
