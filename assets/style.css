@@ -1,0 +1,210 @@
+/* Color Variables */
+:root {
+    --color-primary: #48CAE4;
+    --color-background-start: #03045E;
+    --color-background-end: #0077B6;
+    --color-text: #F2F2F2;
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-hover-bg: rgba(72, 202, 228, 0.2);
+    --color-header-bg: rgba(72, 202, 228, 0.1);
+    --color-nav-active: #023E8A;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text) !important;
+}
+
+html, body {
+    height: 100vh;
+    background-image: linear-gradient(109.6deg, var(--color-background-start) 11.2%, var(--color-background-end) 91.1%);
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+/* Nav Menu Styles */
+.nav-logo {
+    padding: 23px 1px 1px 1px;
+    text-align: center;
+    text-shadow: 0px 0px 50px var(--color-primary);
+}
+
+.nav-text {
+    font-size: 35px;
+    font-weight: 200;
+    text-shadow: 0px 0px 50px var(--color-primary);
+}
+
+.nav-menu {
+    font-size: 18px !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--color-nav-active);
+}
+
+/* Plot Grid Styles */
+.plot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/* Plot Cards Styles */
+.plot-card-container {
+    padding: 15px;
+}
+
+.plot-card {
+    background: var(--color-card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.plot-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background: var(--color-header-bg);
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.plot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.provisional-tag {
+    background: var(--color-hover-bg);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.btn-view-full {
+    padding: 6px 12px;
+    background: var(--color-card-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+.btn-view-full:hover {
+    background: var(--color-hover-bg);
+}
+
+/* Plot Container Styles */
+.plot-container {
+    padding: 15px;
+}
+
+.graph-container {
+    background-color: rgba(0,0,0,0.11);
+    border-radius: 11px;
+}
+
+/* Info Table Styles */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.info-label {
+    font-weight: bold;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.info-value {
+    padding: 8px;
+}
+
+/* Loading Spinner Styles */
+.dash-spinner {
+    border-color: var(--color-primary) !important;
+    border-right-color: transparent !important;
+}
+
+/* Modal Styles */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: var(--color-card-bg);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: calc(100vh - 40px);
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-close-btn {
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.modal-body {
+    padding: 15px;
+    height: calc(100% - 60px);
+}
+
+.modal-graph {
+    height: 100%;
+}

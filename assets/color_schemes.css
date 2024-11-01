@@ -1,0 +1,71 @@
+/* Original Teal Theme */
+.theme-teal {
+    --color-primary: #3DED97;
+    --color-background-start: rgb(0, 0, 0);
+    --color-background-end: rgb(11, 132, 145);
+    --color-text: #f6f6f6;
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-hover-bg: rgba(255, 255, 255, 0.2);
+    --color-header-bg: rgba(13, 202, 240, 0.1);
+    --color-nav-active: #042f33;
+}
+
+/* Purple Theme */
+.theme-purple {
+    --color-primary: #9D4EDD;
+    --color-background-start: #10002B;
+    --color-background-end: #3C096C;
+    --color-text: #F2F2F2;
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-hover-bg: rgba(157, 78, 221, 0.2);
+    --color-header-bg: rgba(157, 78, 221, 0.1);
+    --color-nav-active: #240046;
+}
+
+/* Ocean Theme */
+.theme-ocean {
+    --color-primary: #48CAE4;
+    --color-background-start: #03045E;
+    --color-background-end: #0077B6;
+    --color-text: #F2F2F2;
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-hover-bg: rgba(72, 202, 228, 0.2);
+    --color-header-bg: rgba(72, 202, 228, 0.1);
+    --color-nav-active: #023E8A;
+}
+
+/* Sunset Theme */
+.theme-sunset {
+    --color-primary: #FFB703;
+    --color-background-start: #370617;
+    --color-background-end: #9D0208;
+    --color-text: #F2F2F2;
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-hover-bg: rgba(255, 183, 3, 0.2);
+    --color-header-bg: rgba(255, 183, 3, 0.1);
+    --color-nav-active: #6A040F;
+}
+
+/* Forest Theme */
+.theme-forest {
+    --color-primary: #95D5B2;
+    --color-background-start: #081C15;
+    --color-background-end: #1B4332;
+    --color-text: #F2F2F2;
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-hover-bg: rgba(149, 213, 178, 0.2);
+    --color-header-bg: rgba(149, 213, 178, 0.1);
+    --color-nav-active: #2D6A4F;
+}
+
+/* Midnight Theme */
+.theme-midnight {
+    --color-primary: #7400B8;
+    --color-background-start: #000000;
+    --color-background-end: #240046;
+    --color-text: #E0AAFF;
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-hover-bg: rgba(116, 0, 184, 0.2);
+    --color-header-bg: rgba(116, 0, 184, 0.1);
+    --color-nav-active: #3C096C;
+}
